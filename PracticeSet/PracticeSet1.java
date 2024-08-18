@@ -10,13 +10,13 @@ public class PracticeSet1 {
     these 3 numbers.
     */  
 
-    // Scanner sc = new Scanner(System.in);
-    // int a = sc.nextInt();
-    // int b = sc.nextInt();
-    // int c = sc.nextInt();
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int c = sc.nextInt();
 
-    // double avg = (a + b + c)/3;
-    // System.out.println("Average of three number :" +avg);
+    double avg = (a + b + c)/3;
+    System.out.println("Average of three number :" +avg);
 
 
     /*
@@ -24,10 +24,10 @@ public class PracticeSet1 {
     square.
     */
 
-    // int side = sc.nextInt();
-    // int areaSq = side * side;
+    int side = sc.nextInt();
+    int areaSq = side * side;
 
-    // System.out.println("Area of Square is :" +areaSq);
+    System.out.println("Area of Square is :" +areaSq);
 
 
     /*
@@ -36,16 +36,16 @@ public class PracticeSet1 {
     (Add on : You can also try adding 18% gst tax to the items in the bill as an advanced problem)
     */
 
-    // float pencil = sc.nextFloat();
-    // float pen = sc.nextFloat();
-    // float eraser = sc.nextFloat();
+    float pencil = sc.nextFloat();
+    float pen = sc.nextFloat();
+    float eraser = sc.nextFloat();
     
-    // float sum = pencil + pen + eraser;
-    // float gst = sum * 0.18f;
+    float sum = pencil + pen + eraser;
+    float gst = sum * 0.18f;
 
-    // System.out.println("-------- Item Bill --------");
-    // System.out.println("Pencil :" +pencil +"\nPen :" +pen +"\nEraser :" +eraser +"\nGST :" +gst);
-    // System.out.println("Total Bill :" +(sum+gst));
+    System.out.println("-------- Item Bill --------");
+    System.out.println("Pencil :" +pencil +"\nPen :" +pen +"\nEraser :" +eraser +"\nGST :" +gst);
+    System.out.println("Total Bill :" +(sum+gst));
 
     /*
     What will be the type of result in the following Java code?
