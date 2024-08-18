@@ -62,5 +62,13 @@ public class PracticeSet1 {
      
      System.err.println(result);
 
+    /*
+    Question 5: (Advanced) Will the following statement give any error in Java?
+    int $ = 24;
+    */
+
+    int $ = 24;
+    System.out.println($);
+
     }
 }
