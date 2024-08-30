@@ -22,6 +22,8 @@ public class FunctionQues {
         return fact;
     }
 
+
+    // Find Binomial Coefficient
     public static int binCoeff(int n, int r){
 
         int nfact = findFactorial(n);
@@ -31,6 +33,21 @@ public class FunctionQues {
         int binSoln = nfact/(rfact*nrfact);
         return binSoln;
 
+    }
+
+
+    // Find Prime or Not
+    public static boolean checkPrime(int num){
+        boolean isPrime = true;
+
+        for(int i = 2; i <= Math.sqrt(num); i++){
+            if(num % i == 0){
+                isPrime = false;
+                break;
+            }
+        }
+        return isPrime;
+        
     }
 
     public static void main(String[] args) {
@@ -58,13 +75,29 @@ public class FunctionQues {
 
     // Question 3 : Binomial Coefficient 
 
-        System.out.println("Enter two number :");
+        // System.out.println("Enter two number :");
 
-        int n = sc.nextInt();
-        int r = sc.nextInt();
+        // int n = sc.nextInt();
+        // int r = sc.nextInt();
 
-        int binSoln = binCoeff(n, r);
-        System.out.println(binSoln);
+        // int binSoln = binCoeff(n, r);
+        // System.out.println(binSoln);
+
+    
+    // Question 4 : Check if a number is Prime or not 
+    
+        System.out.print("Enter number : ");
+        int num = sc.nextInt();
+
+        boolean isPrime = checkPrime(num);
+
+        if(isPrime == true){
+            System.out.println("Prime");
+        } 
+        else{
+            System.out.println("Not Prime");
+        }
+
 
     }
 }
