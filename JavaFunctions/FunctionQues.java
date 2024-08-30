@@ -38,17 +38,23 @@ public class FunctionQues {
 
     // Find Prime or Not
     public static boolean checkPrime(int num){
-        boolean isPrime = true;
+        // boolean isPrime = true;
+
+        // Corner Cases
+        if(num == 2){
+            return true;
+        }
 
         for(int i = 2; i <= Math.sqrt(num); i++){
             if(num % i == 0){
-                isPrime = false;
-                break;
+                return false;
             }
         }
-        return isPrime;
+        return true;
         
     }
+          
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -86,18 +92,32 @@ public class FunctionQues {
     
     // Question 4 : Check if a number is Prime or not 
     
-        System.out.print("Enter number : ");
-        int num = sc.nextInt();
+        // System.out.print("Enter number : ");
+        // int num = sc.nextInt();
 
-        boolean isPrime = checkPrime(num);
+        // boolean isPrime = checkPrime(num);
 
-        if(isPrime == true){
-            System.out.println("Prime");
-        } 
-        else{
-            System.out.println("Not Prime");
+        // if(isPrime == true){
+        //     System.out.println("Prime");
+        // } 
+        // else{
+        //     System.out.println("Not Prime");
+        // }
+
+
+    // Question 5 : Print all Primes in a Range 
+
+        System.out.print("Enter End number : ");
+        int end = sc.nextInt();
+
+        boolean isPrime;
+
+        for(int i = 2; i <= end; i++){
+
+            if(checkPrime(i)){
+                System.out.print(" " +i);
+            }
         }
-
 
     }
 }
