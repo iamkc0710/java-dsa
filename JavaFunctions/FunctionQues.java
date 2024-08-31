@@ -53,6 +53,46 @@ public class FunctionQues {
         return true;
         
     }
+
+
+    // Convert from Binary to Decimal
+    public static int BintoDec(int bin){
+        int pow = 0;
+        int dec = 0;
+        int lastDigit = 0;
+
+        while (bin > 0) {
+            lastDigit = bin%10;
+
+            dec += lastDigit * Math.pow(2, pow);
+
+            bin /= 10;
+            pow ++;
+        }
+
+        return dec;
+    }
+
+    // Convert from Decimal to Binary
+    public static int DectoBin(int dec){
+        int bin = 0;
+        int pow = 0;
+
+        while (dec > 0) {
+           int rem = dec % 2;
+
+            bin += rem * (int) Math.pow(10, pow);
+            pow++;
+
+            dec /= 2;
+            
+        }
+
+
+        return bin;
+    }
+
+
           
 
 
@@ -107,17 +147,29 @@ public class FunctionQues {
 
     // Question 5 : Print all Primes in a Range 
 
-        System.out.print("Enter End number : ");
-        int end = sc.nextInt();
+        // System.out.print("Enter End number : ");
+        // int end = sc.nextInt();
 
-        boolean isPrime;
+        // boolean isPrime;
 
-        for(int i = 2; i <= end; i++){
+        // for(int i = 2; i <= end; i++){
 
-            if(checkPrime(i)){
-                System.out.print(" " +i);
-            }
-        }
+        //     if(checkPrime(i)){
+        //         System.out.print(" " +i);
+        //     }
+        // }
+
+
+    // Question 5 : Convert from Binary to Decimal
+        // int bin = 10100011;
+
+        // System.out.println(BintoDec(bin));
+
+
+    // Question 6 : Convert from Decimal to Binary
+        int dec = 7;
+        System.out.println(DectoBin(dec));
+
 
     }
 }
