@@ -63,7 +63,6 @@ public class FunctionQues {
 
         while (bin > 0) {
             lastDigit = bin%10;
-
             dec += lastDigit * Math.pow(2, pow);
 
             bin /= 10;
